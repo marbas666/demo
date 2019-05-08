@@ -39,6 +39,7 @@ hr {
     position: absolute;
     top: 5px;
     right: 10px;
+    font-size: 16pt;
 }
 
 #menu {
@@ -55,6 +56,20 @@ hr {
 
 .menu-item:visited {
     color: #333333;
+}
+
+#lang {
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+#lang-link-ja {
+    display: none;
+}
+
+a.lang-link {
+    font-size: 10pt;
+    margin-left: 10pt;
 }
 
 #news {
@@ -91,19 +106,36 @@ div.content {
     word-wrap: break-word;
 }
 
-div.content-menu-line {
-    margin: 10px 0px;
-    text-align: center;
-    word-wrap: break-word;
-}
-
-div.content-wein-line {
-    margin-left: 100px;
-}
-
 .bold {
     font-weight: bold;
-    font-size: 14pt;
+}
+
+.under {
+    text-decoration: underline;
+}
+
+.sizexx {
+    font-size: 20pt;
+}
+
+.sizex {
+    font-size: 16pt;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.tab {
+    margin-left: 4em;
+}
+
+.rtab {
+    margin-right: 4em;
 }
 
 select {

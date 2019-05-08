@@ -1,11 +1,26 @@
-var news_data = [
-    {
-        date: "2018-01-01",
-        ja: "",
-        en: "",
-        de: ""
-    }
-];
+var info_data = {
+    ja: {
+        title: "支流の会",
+        news: "News",
+        about: "About",
+        event: "Event",
+        contact: "Contact"
+    },
+    en: {
+        title: "Tributary and wine organization",
+        news: "News",
+        about: "About",
+        event: "Event",
+        contact: "Contact"
+    },
+    de: {
+        title: "Nebenfluss und Wein Organisation",
+        news: "News",
+        about: "Über",
+        event: "Ereignis",
+        contact: "Kontakt"
+    },
+};
 
 var about_data = {
     ja: "あいうえおかきくけこさしすせそたちつてと",
@@ -13,4 +28,144 @@ var about_data = {
     de: "ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÜß"
 };
 
+var contact_data = {
+    ja: [
+        ["", "お問い合わせは以下のメールアドレス宛にお願いします。"],
+        ["br", ""],
+        ["", "xxx@xxx.com"],
+        ["br", ""],
+        ["", "※ ご回答には数日かかる場合がございますのでご了承ください。"],
+        ["", "※ お問い合わせの内容によりましては、ご回答いたしかねる場合がございますのでご了承ください。"],
+    ],
+    en: [
+        ["", "Please send inquiries to the following e-mail address."],
+        ["br", ""],
+        ["", "xxx@xxx.com"],
+        ["br", ""],
+        ["", "- Please note that answers may take several days. "],
+        ["", "- Please note that we may not be able to answer depending on the content of the inquiry."],
+    ],
+    de: [
+        ["", "Anfragen senden Sie bitte an folgende E-Mail-Adresse."],
+        ["br", ""],
+        ["", "xxx@xxx.com"],
+        ["br", ""],
+        ["", "- Bitte beachten Sie, dass Antworten mehrere Tage dauern können. "],
+        ["", "- Bitte beachten Sie, dass wir je nach Inhalt der Anfrage möglicherweise nicht antworten können."],
+    ],
+};
 
+
+var news_data =
+{
+    ja: [
+        "2018.11.03 晩秋のジビエ会 支流の会(第26回)@TRATTORIA AMMAZA",
+        "20YY.MM.DD 支流の会(第25回)@TRATTORIA AMMAZA",
+        "2018.07.21 オマール海老丸ごと一匹フルコース 支流の会(第24回)@TRATTORIA AMMAZA",
+        "20YY.MM.DD 支流の会(第23回)@TRATTORIA AMMAZA",
+        "20YY.MM.DD 支流の会(第22回)@TRATTORIA AMMAZA",
+        "20YY.MM.DD 支流の会(第21回)@TRATTORIA AMMAZA",
+        "20YY.MM.DD 支流の会(第20回)@TRATTORIA AMMAZA",
+        "20YY.MM.DD 支流の会(第19回)@TRATTORIA AMMAZA",
+        "20YY.MM.DD 支流の会(第18回)@TRATTORIA AMMAZA",
+        "20YY.MM.DD 支流の会(第17回)@TRATTORIA AMMAZA",
+        "20YY.MM.DD 支流の会(第16回)@TRATTORIA AMMAZA",
+        "20YY.MM.DD 支流の会(第15回)@TRATTORIA AMMAZA",
+        "20YY.MM.DD 支流の会(第14回)@TRATTORIA AMMAZA",
+        "20YY.MM.DD 支流の会(第13回)@TRATTORIA AMMAZA",
+        "20YY.MM.DD 支流の会(第12回)@TRATTORIA AMMAZA",
+        "20YY.MM.DD 支流の会(第11回)@TRATTORIA AMMAZA",
+        "20YY.MM.DD 支流の会(第10回)@TRATTORIA AMMAZA",
+        "20YY.MM.DD 支流の会(第9回)@TRATTORIA AMMAZA",
+        "20YY.MM.DD 支流の会(第8回)@TRATTORIA AMMAZA",
+        "20YY.MM.DD 支流の会(第7回)@TRATTORIA AMMAZA",
+        "20YY.MM.DD 支流の会(第6回)@TRATTORIA AMMAZA",
+        "20YY.MM.DD 支流の会(第5回)@TRATTORIA AMMAZA",
+        "20YY.MM.DD 支流の会(第4回)@TRATTORIA AMMAZA",
+        "20YY.MM.DD 支流の会(第3回)@TRATTORIA AMMAZA",
+        "20YY.MM.DD 支流の会(第2回)@TRATTORIA AMMAZA",
+        "20YY.MM.DD 支流の会(第1回)@TRATTORIA AMMAZA",
+    ],
+};
+
+var event_data = [
+    {
+        title_ja: "晩秋のジビエ会 支流の会(第26回)@TRATTORIA AMMAZA",
+        contents_ja: [
+            ["center bold sizexx", "晩秋のジビエ会"],
+            ["center bold", "支流の会(第26回)@TRATTORIA AMMAZA"],
+            ["br", ""],
+            ["center under", "2018.11.3 18:00~"],
+            ["br", ""],
+            ["center bold", "猪！鳩！！鴨！！！"],
+            ["br", ""],
+            ["center bold under sizex", "Menü"],
+            ["br", ""],
+            ["center", "フランス産ピジョノー（小鳩）のサラダ仕立て<sup>1)2)</sup>"],
+            ["img", "./img/26_01.jpg"],
+            ["br", ""],
+            ["center", "丹波産猪すね肉とカステルッチョ産カンネリーニのカスレ<sup>3)</sup>"],
+            ["img", "./img/26_02.jpg"],
+            ["br", ""],
+            ["center", "ランス産バルバリー鴨のアチェットーソソース<br>タリアテッレ<sup>4)5)</sup>"],
+            ["img", "./img/26_03.jpg"],
+            ["br", ""],
+            ["center", "白海老と焼き茄子のコンフィ<sup>7)</sup>"],
+            ["img", "./img/26_04.jpg"],
+            ["br", ""],
+            ["center", "丹波産天然猪ほほ肉の赤ワイン煮込み<br>里芋のマッシュポテト<sup>8)9)</sup>"],
+            ["img", "./img/26_05.jpg"],
+            ["br", ""],
+            ["center", "食後の紅茶"],
+            ["br", ""],
+            ["center bold under sizex", "Weinliste"],
+            ["br", ""],
+            ["tab", "1) 2013er Spätburgunder Sekt.b.A brut BdN"],
+            ["rtab right", "Weingut Bläsius-Geiben / Mosel"],
+            ["br", ""],
+            ["tab", "1) 2013er Spätburgunder Sekt.b.A brut BdN"],
+            ["rtab right", "Weingut Bläsius-Geiben / Mosel"],
+            ["br", ""],
+            ["tab", "1) 2013er Spätburgunder Sekt.b.A brut BdN"],
+            ["rtab right", "Weingut Bläsius-Geiben / Mosel"],
+            ["br", ""],
+            ["tab", "1) 2013er Spätburgunder Sekt.b.A brut BdN"],
+            ["rtab right", "Weingut Bläsius-Geiben / Mosel"],
+            ["br", ""],
+            ["tab", "1) 2013er Spätburgunder Sekt.b.A brut BdN"],
+            ["rtab right", "Weingut Bläsius-Geiben / Mosel"],
+            ["br", ""],
+            ["tab", "1) 2013er Spätburgunder Sekt.b.A brut BdN"],
+            ["rtab right", "Weingut Bläsius-Geiben / Mosel"],
+            ["br", ""],
+            ["tab", "1) 2013er Spätburgunder Sekt.b.A brut BdN"],
+            ["rtab right", "Weingut Bläsius-Geiben / Mosel"],
+            ["br", ""],
+            ["tab", "1) 2013er Spätburgunder Sekt.b.A brut BdN"],
+            ["rtab right", "Weingut Bläsius-Geiben / Mosel"],
+            ["br", ""],
+            ["tab", "1) 2013er Spätburgunder Sekt.b.A brut BdN"],
+            ["rtab right", "Weingut Bläsius-Geiben / Mosel"],
+        ],
+    },
+    {
+        title_ja: "支流の会(第25回)@TRATTORIA AMMAZA",
+        contents_ja: [
+            ["center bold sizexx", "XXXXXXXXXX会"],
+            ["center bold", "支流の会(第25回)@TRATTORIA AMMAZA"],
+            ["br", ""],
+            ["center under", "20YY.MM.DD 18:00~"],
+            ["br", ""],
+        ],
+    },
+    {
+        title_ja: "オマール海老丸ごと一匹フルコース 支流の会(第24回)@TRATTORIA AMMAZA",
+        contents_ja: [
+            ["center bold sizexx", "オマール海老丸ごと一匹フルコース"],
+            ["center bold", "支流の会(第24回)@TRATTORIA AMMAZA"],
+            ["br", ""],
+            ["center under", "20YY.MM.DD 18:00~"],
+            ["br", ""],
+        ],
+    },
+];

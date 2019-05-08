@@ -66,7 +66,7 @@ function createImg(src) {
     let a = document.createElement("a");
     a.href = src;
     a.target = "blank_";
-    a.append(img);
+    a.appendChild(img);
     let div = createDiv("center", "");
     div.appendChild(a);
     return div;

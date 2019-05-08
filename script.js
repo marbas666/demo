@@ -67,7 +67,7 @@ function createImg(src) {
     a.href = src;
     a.target = "blank_";
     a.append(img);
-    let div = createDiv("center", null);
+    let div = createDiv("center", "");
     div.appendChild(a);
     return div;
 }
@@ -80,7 +80,7 @@ function createOption(value, text) {
 }
 
 function setNews() {
-    getEBI("news-body").innerHTML = null;
+    getEBI("news-body").innerHTML = "";
     let news = news_data[lang];
     if (!news) {
         news = news_data["ja"];
@@ -114,7 +114,7 @@ function setEvent() {
 }
 
 function changeEvent() {
-    getEBI("event-body").innerHTML = null;
+    getEBI("event-body").innerHTML = "";
     let idx = getEBI("event-select").value;
     let event = event_data[idx];
     let contents = event["contents_" + lang];
@@ -135,7 +135,7 @@ function changeEvent() {
 }
 
 function setContact() {
-    getEBI("contact-body").innerHTML = null;
+    getEBI("contact-body").innerHTML = "";
     let contacts = contact_data[lang];
     if (!contacts) {
         contacts = contact_data["ja"];

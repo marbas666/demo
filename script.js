@@ -1,6 +1,5 @@
 
 var lang = "ja";
-var tid = null;
 
 function init() {
     lang = getLang();
@@ -9,26 +8,7 @@ function init() {
     setAbout();
     setEvent();
     setContact();
-    tid = setTimeout(changeImg, 10000);
     getEBI("event-select").addEventListener("change", changeEvent);
-    getEBI("header").addEventListener("click", changeImg);
-}
-
-function changeImg() {
-    if (tid) {
-        clearTimeout(tid);
-        tid = null;
-    }
-    let header = getEBI("header");
-    while (true) {
-        let rnd = Math.floor(Math.random() * 4) + 1;
-        let clazz = "header-img0" + rnd;
-        if (header.className != clazz) {
-            header.className = clazz;
-            break;
-        }
-    }
-    tid = setTimeout(changeImg, 30000);
 }
 
 function getLang() {
@@ -55,6 +35,11 @@ function getLang() {
 
 function setInfo() {
     document.getElementsByTagName("title")[0].innerHTML = info_data[lang].title + " - Homepage";
+    let now = new Date();
+    let time = now.getTime();
+    let idx = time % 4 + 1;
+    let header = getEBI("header");
+    header.className = "header-img0" + idx;
     getEBI("header-title").innerHTML = info_data[lang].title;
     getEBI("footer-title").innerHTML = info_data[lang].title;
     let names = ["news", "about", "event", "contact"];

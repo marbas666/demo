@@ -61,8 +61,7 @@ function createBr() {
 
 function createImg(src) {
     let img = document.createElement("img");
-    img.src = src;
-    img.width = 300;
+    img.src = "./img/cam.png";
     let a = document.createElement("a");
     a.href = src;
     a.target = "blank_";

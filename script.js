@@ -75,7 +75,7 @@ function createImg(src) {
 function createOption(value, text) {
     let op = document.createElement("option");
     op.value = value;
-    op.innerText = text;
+    op.innerHTML = text;
     return op;
 }
 

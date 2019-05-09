@@ -122,6 +122,10 @@ div.content {
     font-size: 16pt;
 }
 
+.sizes {
+    font-size: 10pt;
+}
+
 .center {
     text-align: center;
 }

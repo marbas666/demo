@@ -1,5 +1,6 @@
 
 var lang = "ja";
+var tid = null;
 
 function init() {
     lang = getLang();
@@ -8,7 +9,26 @@ function init() {
     setAbout();
     setEvent();
     setContact();
+    tid = setTimeout(changeImg, 10000);
     getEBI("event-select").addEventListener("change", changeEvent);
+    getEBI("header").addEventListener("click", changeImg);
+}
+
+function changeImg() {
+    if (tid) {
+        clearTimeout(tid);
+        tid = null;
+    }
+    let header = getEBI("header");
+    while (true) {
+        let rnd = Math.floor(Math.random() * 4) + 1;
+        let clazz = "header-img0" + rnd;
+        if (header.className != clazz) {
+            header.className = clazz;
+            break;
+        }
+    }
+    tid = setTimeout(changeImg, 30000);
 }
 
 function getLang() {

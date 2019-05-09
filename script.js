@@ -64,7 +64,7 @@ function createImg(src) {
     img.src = "./img/cam.png";
     let a = document.createElement("a");
     a.href = src;
-    a.target = "blank_";
+    a.target = "imgview";
     a.appendChild(img);
     let div = createDiv("center", "");
     div.appendChild(a);

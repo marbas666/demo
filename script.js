@@ -33,13 +33,23 @@ function getLang() {
     return lang;
 }
 
+var imgs = [
+    ['url("./img/img01.jpg")', '0px -120px', '100% auto'],
+    ['url("./img/img02.jpg")', '0px -120px', '100% auto'],
+    ['url("./img/img03.jpg")', '0px -230px', '100% auto'],
+    ['url("./img/img04.jpg")', '0px -180px', '100% auto'],
+    ['url("./img/img05.jpg")', '0px -250px', '100% auto'],
+];
+
 function setInfo() {
     document.getElementsByTagName("title")[0].innerHTML = info_data[lang].title + " - Homepage";
     let now = new Date();
     let time = now.getTime();
-    let idx = time % 4 + 1;
+    let idx = time % imgs.length;
     let header = getEBI("header");
-    header.className = "header-img0" + idx;
+    header.style.backgroundImage = imgs[idx][0];
+    header.style.backgroundPosition = imgs[idx][1];
+    header.style.backgroundSize = imgs[idx][2];
     getEBI("header-title").innerHTML = info_data[lang].title;
     getEBI("footer-title").innerHTML = info_data[lang].title;
     let names = ["news", "about", "event", "contact"];

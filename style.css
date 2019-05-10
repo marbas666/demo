@@ -31,30 +31,6 @@ hr {
     border-radius: 10px;
 }
 
-.header-img01 {
-    background-image: url("./img/img01.jpg");
-    background-position: 0px -120px;
-    background-size: 100% auto;
-}
-
-.header-img02 {
-    background-image: url("./img/img02.jpg");
-    background-position: 0px -120px;
-    background-size: 100% auto;
-}
-
-.header-img03 {
-    background-image: url("./img/img03.jpg");
-    background-position: 0px -230px;
-    background-size: 100% auto;
-}
-
-.header-img04 {
-    background-image: url("./img/img04.jpg");
-    background-position: 0px -180px;
-    background-size: 100% auto;
-}
-
 #header-title {
     color: white;
     position: absolute;

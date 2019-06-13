@@ -7,14 +7,14 @@ var info_data = {
         contact: "Contact"
     },
     en: {
-        title: "Tributary and wine organization",
+        title: "Wine with river",
         news: "News",
         about: "About",
         event: "Event",
         contact: "Contact"
     },
     de: {
-        title: "Nebenfluss und Wein Organisation",
+        title: "Wein mit Fluss",
         news: "News",
         about: "Über",
         event: "Ereignis",
